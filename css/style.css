@@ -6,6 +6,16 @@ body, ul, li {
 body {
     background-color: #ccc;
 }
+h1 {
+  font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+h2{
+   font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
+}
+p {
+  font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
+}
 /*////////////////////general header styling//////////////////*/
 header {
     width: 100%;
@@ -14,6 +24,8 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
+    z-index: 1;
 }
     header h1 {
     font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
@@ -26,9 +38,11 @@ header {
         border-top: 3px solid #607D8B;
         border-bottom: 3px solid #607D8B;
         display: block;
+        box-shadow: 0 -2px 6px -6px rgba(0,0,0,.2), 3px 0px 2px -6px black, -2px 0px 6px -6px black;
+        overflow: hidden;
 }
 header nav ul li a svg:hover{
-        fill: #373948;
+        fill: #607D8B;
     }
 header nav ul li a.active{
         border-bottom: none;
@@ -73,7 +87,7 @@ section#contact{ background-color: #000; }
         padding: 15px 15px;
     }
     header nav ul li a.active{
-        height: 27.5px;
+        height: 28px;
     }
     section#home { margin-top: 60px;}
 }
@@ -82,9 +96,9 @@ section#contact{ background-color: #000; }
 
     header {
         height: 100px;
-        box-shadow: inset 0 2px 6px rgba(0,0,0,2);
+        
         padding-left: 5%;
-        padding-right: 5%
+        padding-right: 5%;
     }
     div#myName{
         height: 40px;
@@ -115,11 +129,19 @@ section#contact{ background-color: #000; }
         height: 24.5px;
     }
     section#home{margin-top: 100px;}
+    
+    section ul img {
+        height: 100px;
+        width: 120px;
+    }
+    input{
+        color:;
+    }
 }
 /*///////////////////gallery formatting///////////////////////*/
 section ul {
-    padding: 0;
-    margin: 0;
+    padding: 1em;
+    margin: 1em;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
@@ -127,7 +149,14 @@ section ul {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content:space-around;
+}
+/*/////////////////////contact form style//////////////////////*/
+.typeform-widget{
+    width: 80%;
+    height: 350px;
+    transform: translateX(15%);
+    z-index: -3;
 }
 /*/////////////////main content formating/////////////////////*/
 section {
@@ -149,4 +178,7 @@ section p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 1em;
+    max-width: 80%;
+    transform: translateX(15%);
+    z-index: -3;
 }

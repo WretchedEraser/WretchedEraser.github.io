@@ -17,7 +17,7 @@ if (window.matchMedia("(min-width: 700px)").matches) {
     
     // Scroll to anchor
     
-    $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 60},'slow');
+    $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 60},'500');
     
     e.preventDefault();
     return false;
@@ -62,7 +62,7 @@ if (window.matchMedia("(min-width: 700px)").matches) {
   
   $(document).scroll(function() {
      
-     var position = Math.floor($(this).scrollTop() / 800) + 1;
+     var position = Math.floor($(this).scrollTop() / 1000) + 1;
     
      $('header nav a.active').removeClass('active');
      $('header nav a.link-' + position).addClass('active');
