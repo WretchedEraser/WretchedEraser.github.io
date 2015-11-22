@@ -1,6 +1,10 @@
 
 
-	if (window.matchMedia("(min-width: 700px)").matches) {
+	
+
+
+if (window.matchMedia("(min-width: 700px)").matches) {
+        console.log("if");
 		// window width is at least 500px
         $(document).ready( function() {
   
@@ -35,6 +39,7 @@
 	}
 	else {
 		// window width is less than 500px
+        console.log("else");
         $(document).ready( function() {
   
   // On click, remove class on active element, add it to the new one
@@ -65,5 +70,6 @@
   });
   
 });
+        
 	}
 

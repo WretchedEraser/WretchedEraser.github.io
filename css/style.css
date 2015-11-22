@@ -1,37 +1,61 @@
-
-
-/* entypo */
-[class*="entypo-"]:before {
-    font-family: 'entypo', sans-serif;
-}
-/*general*/
+/*////////////////////////general/////////////////////////////*/
 body, ul, li {
     margin: 0;
     padding: 0;
 }
-@media  (min-width: 701px){
+body {
+    background-color: #ccc;
+}
+/*////////////////////general header styling//////////////////*/
+header {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #607D8B;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+    header h1 {
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    }
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        border-top: 3px solid #607D8B;
+        border-bottom: 3px solid #607D8B;
+        display: block;
+}
+header nav ul li a svg:hover{
+        fill: #373948;
+    }
+header nav ul li a.active{
+        border-bottom: none;
+    }
+header nav ul li a.link-1,
+section#home{ background-color: #1976D2; }
+header nav ul li a.link-2,            
+section#portfolio{ background-color: #FBC02D; }
+header nav ul li a.link-3,            
+section#resume{ background-color: #F44336; }
+header nav ul li a.link-4,
+section#contact{ background-color: #000; }
+/*///////////////////////wide screens/////////////////////////*/
+@media (min-width: 701px){
 
     header {
-        width: 100%;
-        height: 60px;
-        box-sizing: border-box;
-        background-color: #373948;
-        position: fixed;
+        height: 61px;
         top: 0px;
         left: 0px;
         padding: 0px 0px 0px 30px;
     }
-    
     header h1 {
-        font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
         font-size: 1.4em;
         float: left;
         margin-left: 0px;
-        color: white;
      }
-
     header nav ul {
-        height: 60px;
         float: right;
         margin-right: 10px;
     }
@@ -44,63 +68,36 @@ body, ul, li {
         display: inline-block;
 
     }
-
-    header nav ul li a {
+   header nav ul li a {
         height: 25px;
-        display: block;
         padding: 15px 15px;
-        color: white;
-        text-decoration: none;
-        border-top: 3px solid #373948;
-        border-bottom: 3px solid #373948;
-        transition: color .5s ease;
-
-
     }
-
-
     header nav ul li a.active{
         height: 27.5px;
-        border-bottom: none;
     }
     section#home { margin-top: 60px;}
 }
+/*/////////mobile and small screens to prevent nav warp///////*/
 @media handheld, (max-width: 700px){
 
     header {
-        width: 100%;
         height: 100px;
-        box-sizing: border-box;
-        background-color: #373948;
-        position: fixed;
-        top: 0px;
-        left: 0px;
+        box-shadow: inset 0 2px 6px rgba(0,0,0,2);
         padding-left: 5%;
         padding-right: 5%
     }
-
     div#myName{
-        height: 40px; 
+        height: 40px;
     }
-
     header h1 {
-        font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-        font-size: 1.75em; 
+        font-size: 1.75em;
         margin: 5px 0px;
         margin-left: 0px;
-        color: white;
-        text-align: center;
-
-    }
-
-    header nav ul {
-        height: 60px;
     }
     svg{
         height: 20px;
         width: 20px
     }
-
     header nav ul li {
         width: 23.5%;
         margin-top: 8px;
@@ -109,75 +106,30 @@ body, ul, li {
         text-align: center;
 
     }
-
     header nav ul li a {
         height: 20px;
-        display: block;
         padding: 10px 10px;
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        border-top: 3px solid #373948;
-        border-bottom: 3px solid #373948;
-        -webkit-transition: color .5s ease;
-        -o-transition: color .5s ease;
-        transition: color .5s ease;
-    }
-
-    header nav ul li a:hover{
-        color: #373948;
     }
 
     header nav ul li a.active{
         height: 24.5px;
-        border-bottom: none;
     }
     section#home{margin-top: 100px;}
 }
-
-
-
-/*color*/
-body {
-    background-color: #ccc;
-}
-
-header nav ul li a.link-1,
-section#home{ background-color: #00c0e4; }
-header nav ul li a.link-2,
-section#portfolio{ background-color: #e6567a; }
-header nav ul li a.link-3,
-section#resume{ background-color: #eac14d; }
-header nav ul li a.link-4,
-section#contact{ background-color: #5bd999; }
-
+/*///////////////////gallery formatting///////////////////////*/
 section ul {
-    border: 3px solid white;
-    margin-top: 15px;
-    margin-left: 0%;
-    margin-top: 2%;
-    margin-right: 2%;
-    display: inline-flex;
-    justify-content: center;
-
     padding: 0;
     margin: 0;
     list-style: none;
-
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-
 }
-
-
-/*main content formating*/
-
+/*/////////////////main content formating/////////////////////*/
 section {
     width: 100%;
     height: 1000px;
@@ -185,8 +137,6 @@ section {
     padding: 25px;
     overflow: hidden;
 }
-
-
 section h2 {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -194,9 +144,6 @@ section h2 {
     font-size: 3em;
     margin: 0px;
 }
-
-
-
 section p {
     color: white;
     font-family: 'Open Sans', sans-serif;
