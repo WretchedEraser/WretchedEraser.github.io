@@ -1,6 +1,6 @@
 
 
-	if (window.matchMedia("(min-width: 500px)").matches) {
+	if (window.matchMedia("(min-width: 700px)").matches) {
 		// window width is at least 500px
         $(document).ready( function() {
   

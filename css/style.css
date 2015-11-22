@@ -9,7 +9,7 @@ body, ul, li {
     margin: 0;
     padding: 0;
 }
-@media (min-width: 501px){
+@media (min-width: 701px){
 
     header {
         width: 100%;
@@ -65,7 +65,7 @@ body, ul, li {
     }
     section#home { margin-top: 60px;}
 }
-@media (max-width: 500px){
+@media (max-width: 700px){
 
     header {
         width: 100%;
