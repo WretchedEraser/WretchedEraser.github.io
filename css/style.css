@@ -65,7 +65,7 @@ body, ul, li {
     }
     section#home { margin-top: 60px;}
 }
-@media handheld or (max-width: 700px){
+@media handheld, (max-width: 700px){
 
     header {
         width: 100%;
