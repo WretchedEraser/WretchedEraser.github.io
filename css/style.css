@@ -21,6 +21,12 @@ a{
     text-decoration: none;
     
 }
+img {
+  max-width: 100%;
+}
+h3{
+    transform: translateX(10%)
+}
 /*////////////////////general header styling//////////////////*/
 header {
     width: 100%;
@@ -145,6 +151,7 @@ section#contact{ background-color: #000; }
     }
 }
 /*///////////////////gallery formatting///////////////////////*/
+/*
 section ul {
     padding: 1em;
     margin: 1em;
@@ -157,6 +164,40 @@ section ul {
     -webkit-flex-flow: row wrap;
     justify-content:space-around;
 }
+*/
+
+/*********************************
+page: portfolio
+*********************************/
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li{
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: #FFA000;
+  color: #FFA000;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #fff;
+}
+@media screen and (min-width: 0px){
+
+  #gallery li{
+    width: 28.3333%
+  }
+  #gallery li:nth-child(4n){
+  clear: left;
+  }
+
 
 /*/////////////////main content formating/////////////////////*/
 section {
