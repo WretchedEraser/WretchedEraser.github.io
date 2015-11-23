@@ -6,15 +6,16 @@ body, ul, li {
 body {
     background-color: #ccc;
 }
-h1 {
+h1, h2, h3 {
   font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h2{
-   font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
+    color: #fff;
 }
 p {
   font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
+}
+h3 svg{
+    height: 20px;
+    width: auto;
 }
 /*////////////////////general header styling//////////////////*/
 header {
@@ -108,7 +109,7 @@ section#contact{ background-color: #000; }
         margin: 5px 0px;
         margin-left: 0px;
     }
-    svg{
+    header nav svg{
         height: 20px;
         width: 20px
     }
@@ -168,14 +169,14 @@ section {
 }
 section h2 {
     color: white;
-/*    font-family: 'Open Sans', sans-serif;*/
+
     font-weight: 300;
     font-size: 3em;
     margin: 0px;
 }
 section p {
     color: white;
-/*    font-family: 'Open Sans', sans-serif;*/
+
     font-weight: 300;
     font-size: 1em;
     max-width: 80%;
