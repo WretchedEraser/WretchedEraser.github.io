@@ -30,13 +30,16 @@ img {
 h3{
     transform: translateX(10%)
 }
-input, ,  {
-    -webkit-border-radius:0; 
-    border-radius:0;
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
 }
 footer{
     position: static;
-    transform: translateY(250px)
+    transform: translateY(250px);
 }
 /*////////////////////general header styling//////////////////*/
 header {
