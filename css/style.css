@@ -243,7 +243,7 @@ section#contact{ background-color: #000; }
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 5;
+    z-index: 0;
     
     -moz-transition:  opacity 0.5s ease-out; 
        -o-transition: opacity 0.5s ease-out; 
