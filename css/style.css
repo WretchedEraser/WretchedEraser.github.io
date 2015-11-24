@@ -35,7 +35,7 @@ input[type="text"],
 input[type="button"],
 input[type="submit"],
 input[type="email"],
-input[type="tel"]{
+input[type="tel"],{
      -webkit-appearance: none;
      border-radius: 0;
 }
@@ -227,6 +227,43 @@ section#contact{ background-color: #000; }
         transform: translateX(15%);
         z-index: -3;
     }
+/*//////////////////////////home endless slideshow/////////////////////////////////////*/
+  #tech-slideshow {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#tech-slideshow > div {
+    height: 500px;
+    width: 4489px;
+    background-image: url(/img/show_grid_large_2x.png);
+    box-shadow: 0 2px 6px rgba(100,100,100,80);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 5;
+    
+    -moz-transition:  opacity 0.5s ease-out; 
+       -o-transition: opacity 0.5s ease-out; 
+  -webkit-transition: opacity 0.5s ease-out; 
+      -ms-transition: opacity 0.5s ease-out; 
+
+    -webkit-animation: moveSlideshow 60s linear infinite;
+    -moz-animation:    moveSlideshow 60s linear infinite;
+    
+}
+
+@-webkit-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -2240px; }
+}
+@-moz-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -2240px; }
+}
+    
     /*/////////////////////contact form style//////////////////////*/
     .form-whole {
         margin: 0 auto;
