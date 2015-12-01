@@ -86,7 +86,7 @@ section#contact{ background-color: #000; }
 @media (min-width: 701px){
 
     header {
-        height: 99px;
+        height: 100px;
         top: 0px;
         left: 0px;
         padding: 0px 0px 0px 30px;
@@ -112,7 +112,7 @@ section#contact{ background-color: #000; }
     }
     header nav ul li a {
         height: 64px;
-        padding: 13px 15px;
+        padding: 13.5px 15px;
     }
     header nav ul li a.active{
         height: 70px;
