@@ -9,3 +9,5 @@ portfolio Icon made by href="http://www.freepik.com" title="Freepik">Freepik fro
 form forked from http://codepen.io/GhostRider/pen/Liptx
 
 logos from http://iconmonstr.com/
+
+light-box css style http://codepen.io/gschier/pen/HCoqh
