@@ -11,3 +11,5 @@ form forked from http://codepen.io/GhostRider/pen/Liptx
 logos from http://iconmonstr.com/
 
 light-box css style http://codepen.io/gschier/pen/HCoqh
+
+infinite slideshow adapted from https://css-tricks.com/infinite-all-css-scrolling-slideshow/
