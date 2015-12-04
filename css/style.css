@@ -53,6 +53,7 @@ input[type="submit"],
 input[type="email"],
 input[type="tel"],{
     -webkit-appearance: none;
+    -webkit-border-radius:0;
     border-radius: 0;
 }
 input {
