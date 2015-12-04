@@ -51,10 +51,13 @@ input[type="tel"],{
     border-radius: 0;
 }
 section {
-    width: 100%;
+    width: 90%;
     height: 1000px;
-    padding: 25px;
+
+    padding-left: 5%;
+    padding-right: 5%;
     overflow: hidden;
+    zoom: 1;
 }
 section#contact {
     height: 1250px;
@@ -217,6 +220,16 @@ padding: 5px 5px 16px 5px;
 }
 
 /*/////////////////////contact form style//////////////////////*/
+.social-icon{
+    margin-left: 10%;
+/*    height: 3em;*/
+}
+.facebook svg:hover{
+    fill: #3B5998;
+}
+.twitter svg:hover{
+    fill: #55ACEE;
+}
 .form-whole {
     margin: 0 auto;
     width: 80%;
@@ -267,9 +280,9 @@ padding: 5px 5px 16px 5px;
 /*///////////////////////colors////////////////////////////////*/
 header nav ul li a.link-1,
 section#home{ background-color: #1976D2; }
-header nav ul li a.link-2,            
+header nav ul li a.link-2,
 section#portfolio{ background-color: #FBC02D; }
-header nav ul li a.link-3,            
+header nav ul li a.link-3,
 section#resume{ background-color: #F44336; }
 header nav ul li a.link-4,
 section#contact{ background-color: #000; }
@@ -300,8 +313,8 @@ section#contact{ background-color: #000; }
         height: 70px;
     }
     #gallery li img{
-        width: 9em;
-        height: 9em;
+        width: 8em;
+        height: 8em;
     }
 }
 /*/////////mobile and small screens to prevent nav warp///////*/
@@ -339,7 +352,12 @@ section#contact{ background-color: #000; }
         height: 24.5px;
     }
     #gallery li img{
-        width: 4em;
-        height: 4em;
+        width: 5em;
+        height: 5em;
     }
+    .social-icon{
+/*    margin-left: 10%;*/
+    height: 2em;
+        width: 2em;
+}
 }
