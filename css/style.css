@@ -232,6 +232,11 @@ padding: 5px 5px 16px 5px;
 .twitter svg:hover{
     fill: #55ACEE;
 }
+.github svg:hover{
+    fill: #181717;
+    stroke: #fff;
+    stroke-width: 2%;
+}
 .form-whole {
     margin: 0 auto;
     width: 80%;
