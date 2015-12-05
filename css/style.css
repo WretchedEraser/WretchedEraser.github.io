@@ -16,7 +16,6 @@ h1,h2, h3, h4, figure{
     font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
     color: #fff;
 }
-
 h2 {
     font-size: 3.5em;
 }
@@ -39,7 +38,6 @@ h3 svg{
 }
 a{
     text-decoration: none;
-
 }
 textarea,
 input[type="text"],
@@ -53,7 +51,6 @@ input[type="tel"],{
 section {
     width: 90%;
     height: 1000px;
-
     padding-left: 5%;
     padding-right: 5%;
     overflow: hidden;
@@ -75,8 +72,6 @@ section p {
     transform: translateX(15%);
     z-index: 0;
 }
-
-
 /*////////////////////general header styling//////////////////*/
 header {
     height: 100px;
@@ -93,7 +88,6 @@ header h1 {
     text-align: center;
 }
 header nav ul li a {
-    
     border-top: 3px solid #607D8B;
     border-bottom: 3px solid #607D8B;
     display: block;
@@ -107,7 +101,6 @@ header nav ul li a.active{
     border-bottom: none;
 }
 section#home { margin-top: 100px;}
-
 /*///////////home endless slideshow////////////////////////////*/
 #tech-slideshow {
     height: 500px;
@@ -131,7 +124,6 @@ section#home { margin-top: 100px;}
     -ms-transition: opacity 0.5s ease-out; 
     -webkit-animation: moveSlideshow 60s linear infinite;
     -moz-animation:    moveSlideshow 60s linear infinite;
-
 }
 @-webkit-keyframes moveSlideshow {
     0% { left: 0; }
@@ -141,8 +133,6 @@ section#home { margin-top: 100px;}
     0% { left: 0; }
     100% { left: -2240px; }
 }
-
-
 /*/////////general gallery light box styling////////////////////*/
 #gallery li img{
 object-fit: cover;
@@ -170,7 +160,6 @@ padding: 5px 5px 16px 5px;
     left: 0;
     background: rgba(0,0,0,0.8);
 }
-
 .lightbox figure img {
     /** Pad the lightbox image */
     max-width: 70%;
@@ -178,17 +167,14 @@ padding: 5px 5px 16px 5px;
     transform: translateX(-50%);
     margin-top: 2%;
     position: absolute;
-    
 }
 .lightbox figure figcaption{
     position: absolute;
     bottom: 0;
     right: 20%;
     left: 20%;
-    
 }
 .lightbox figure{
-/*    display: inline-block;*/
     width: 90%;
     height: 90%;
     margin-top: 2%;
@@ -200,9 +186,7 @@ padding: 5px 5px 16px 5px;
     /** Unhide lightbox **/
     display: block;
 }
-
 /*/////////////////////resumé formating/////////////////*/
-
 .res-wrapper{
     float:left;
     height: 17em;
@@ -234,16 +218,13 @@ padding: 5px 5px 16px 5px;
     width: 45%;
     transform: translateX(22%)
 }
-
 /*/////////////////////contact form style//////////////////////*/
 .social-caption{
     display: inline-block;
     font-size: 1.5em;
-/*    color: red;*/
 }
 .social-icon{
     margin-left: 5%;
-/*    height: 3em;*/
 }
 .facebook svg:hover{
     fill: #3B5998;
@@ -295,9 +276,6 @@ padding: 5px 5px 16px 5px;
     color: #fff;
     box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
 }
-
-
-
 /*///////////////////////colors////////////////////////////////*/
 header nav ul li a.link-1,
 section#home{ background-color: #1976D2; }
@@ -309,7 +287,6 @@ header nav ul li a.link-4,
 section#contact{ background-color: #000; }
 /*///////////////////////wide screens/////////////////////////*/
 @media (min-width: 701px){
-
     header h1 {
         float: left;
     }
@@ -324,7 +301,6 @@ section#contact{ background-color: #000; }
     }
     header nav ul li {
         display: inline-block;
-
     }
     header nav ul li a {
         height: 64px;
@@ -340,7 +316,6 @@ section#contact{ background-color: #000; }
 }
 /*/////////mobile and small screens to prevent nav warp///////*/
 @media handheld, (max-width: 700px){
-
     header {
         padding-left: 5%;
         padding-right: 5%;
@@ -362,13 +337,11 @@ section#contact{ background-color: #000; }
         height: 50px;
         display: inline-block;
         text-align: center;
-
     }
     header nav ul li a {
         height: 20px;
         padding: 10px 10px;
     }
-
     header nav ul li a.active{
         height: 24.5px;
     }
@@ -377,8 +350,7 @@ section#contact{ background-color: #000; }
         height: 5em;
     }
     .social-icon{
-/*    margin-left: 10%;*/
     height: 2em;
-        width: 2em;
+    width: 2em;
 }
 }
