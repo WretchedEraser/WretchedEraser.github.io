@@ -10,4 +10,8 @@ light-box css style http://codepen.io/gschier/pen/HCoqh
 
 infinite slideshow adapted from https://css-tricks.com/infinite-all-css-scrolling-slideshow/
 
+<<<<<<< HEAD
 resume icon Created by Irene Trautluft
+=======
+fought spam with http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870
+>>>>>>> origin/master
