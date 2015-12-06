@@ -9,8 +9,7 @@ body {
 }
 footer{
     position: static;
-    transform: translateY(250px);
-}
+ bottom: 0;}
 /*general text styling*/
 h1,h2, h3, h4, figure{
     font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
@@ -137,8 +136,10 @@ section#home { margin-top: 100px;}
 #gallery li img{
 object-fit: cover;
 box-shadow: 0 10px 30px rgba(0,0,0,.10);
-background: #fff;
-padding: 5px 5px 16px 5px;
+background: #FFA000;
+padding: .51em;
+    transition: height .5s ease;
+        transition: width .5s ease;
 }
  #gallery li{
         display: inline-block;
@@ -146,6 +147,7 @@ padding: 5px 5px 16px 5px;
     }
 #gallery {
     list-style: none;
+    text-align: center;
 }
 .lightbox {
     /** Default lightbox to hidden */
@@ -173,7 +175,7 @@ padding: 5px 5px 16px 5px;
     bottom: 0;
     right: 20%;
     left: 20%;
-}
+} 
 .lightbox figure{
     width: 90%;
     height: 90%;
@@ -219,18 +221,28 @@ padding: 5px 5px 16px 5px;
     transform: translateX(22%)
 }
 /*/////////////////////contact form style//////////////////////*/
+label{
+    visibility: hidden;
+}
 .social-caption{
-    display: inline-block;
+    transform: translateY(-5px);
+    display: inline-flex;
     font-size: 1.5em;
 }
+
 .social-icon{
     margin-left: 5%;
+    height: 50px;
+    margin-top: -20px;
 }
 .facebook svg:hover{
     fill: #3B5998;
 }
 .twitter svg:hover{
     fill: #55ACEE;
+}
+.linkedin svg:hover{
+    fill: #0077B5;
 }
 .github svg:hover{
     fill: #181717;
@@ -248,9 +260,9 @@ padding: 5px 5px 16px 5px;
 .form-icon{
     color:#000; 
     float:left;
-    padding:5px;
-    width:50px;
-    background:#FFFFFF;
+    padding 1px;
+    margin-bottom:1px;
+/*    background:#FFFFFF;*/
     text-align:center;	
 }
 .formfield {
@@ -291,7 +303,7 @@ section#resume{ background-color: #F44336; }
 header nav ul li a.link-4,
 section#contact{ background-color: #000; }
 /*///////////////////////wide screens/////////////////////////*/
-@media (min-width: 701px){
+@media (min-width:1476px){
     header h1 {
         float: left;
     }
@@ -299,7 +311,64 @@ section#contact{ background-color: #000; }
         float: right;
         margin-right: 10px;
     }
-    svg{
+    header svg{
+        transform: translateY(10px);
+        height: 50px;
+        width: 50px;
+    }
+    header nav ul li {
+        display: inline-block;
+    }
+    header nav ul li a {
+        height: 64px;
+        padding: 13.5px 15px;
+    }
+    header nav ul li a.active{
+        height: 70px;
+    }
+    #gallery li img{
+        width: 13em;
+        height: 11em;
+    }
+}
+@media (min-width: 900px) and (max-width:1475px){
+    header h1 {
+        float: left;
+    }
+    header nav ul {
+        float: right;
+        margin-right: 10px;
+    }
+    header svg{
+        transform: translateY(10px);
+        height: 50px;
+        width: 50px;
+    }
+    header nav ul li {
+        display: inline-block;
+    }
+    header nav ul li a {
+        height: 64px;
+        padding: 13.5px 15px;
+    }
+    header nav ul li a.active{
+        height: 70px;
+    }
+    #gallery li img{
+        width: 10em;
+        height: 8em;
+    }
+}
+/*///////////////////////wide screens/////////////////////////*/
+@media (min-width:701px) and (max-width:899px){
+    header h1 {
+        float: left;
+    }
+    header nav ul {
+        float: right;
+        margin-right: 10px;
+    }
+    header nav svg{
         transform: translateY(10px);
         height: 50px;
         width: 50px;
@@ -316,11 +385,11 @@ section#contact{ background-color: #000; }
     }
     #gallery li img{
         width: 8em;
-        height: 8em;
+        height: 6em;
     }
 }
 /*/////////mobile and small screens to prevent nav warp///////*/
-@media handheld, (max-width: 700px){
+@media handheld, (min-width:433px) and (max-width:700px){
     header {
         padding-left: 5%;
         padding-right: 5%;
@@ -351,11 +420,87 @@ section#contact{ background-color: #000; }
         height: 24.5px;
     }
     #gallery li img{
-        width: 5em;
-        height: 5em;
+        width: 6em;
+        height: 6em;
     }
-    .social-icon{
-    height: 2em;
-    width: 2em;
 }
+@media handheld, (min-width: 344px) and (max-width: 432px ){
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div#myName{
+        height: 40px;
+    }
+    header h1 {
+        margin: 5px 0px;
+    }
+    header nav svg{
+        height: 30px;
+        width: 30px;
+        transform: translateY(-5px);
+    }
+    header nav ul li {
+        width: 23.5%;
+        margin-top: 8px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+    }
+    header nav ul li a {
+        height: 20px;
+        padding: 10px 10px;
+    }
+    header nav ul li a.active{
+        height: 24.5px;
+    }
+    #gallery li img{
+        width: 4.65em;
+        height: 4.65em;
+    }
+}
+/*/////////baby phones and potato///////*/
+@media handheld, (max-width: 343px){
+    li{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    h3, li.eduheading{
+      font-size: 15px;  
+    }
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div#myName{
+        height: 40px;
+    }
+    header h1 {
+        margin: 5px 0px;
+    }
+    header nav svg{
+        height: 30px;
+        width: 30px;
+        transform: translateY(-5px);
+    }
+    header nav ul li {
+        width: 23.5%;
+        margin-top: 8px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+    }
+    header nav ul li a {
+        height: 20px;
+        padding: 10px 10px;
+    }
+    header nav ul li a.active{
+        height: 24.5px;
+    }
+    #gallery li img{
+        width: 6em;
+        height: 6em;
+    }
 }
