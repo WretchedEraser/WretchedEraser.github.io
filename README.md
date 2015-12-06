@@ -9,3 +9,5 @@ logos from http://iconmonstr.com/
 light-box css style http://codepen.io/gschier/pen/HCoqh
 
 infinite slideshow adapted from https://css-tricks.com/infinite-all-css-scrolling-slideshow/
+
+resume icon Created by Irene Trautluft
