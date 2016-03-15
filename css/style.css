@@ -1,4 +1,8 @@
 /*////////////////////////general/////////////////////////////*/
+canvas{
+    position: fixed;
+    z-index: -5;
+}
 body, ul, li {
     list-style: none;
     margin: 0;
@@ -48,7 +52,8 @@ input[type="tel"],{
     border-radius: 0;
 }
 section {
-    width: 90%;
+/*    width: 70%;*/
+/*    margin: 0 auto;*/
     height: 1000px;
     padding-left: 5%;
     padding-right: 5%;
@@ -94,7 +99,7 @@ header {
     height: 100px;
     width: 100%;
     box-sizing: border-box;
-    background-color: #9e9e9e;
+    background-color: #ec008c;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -106,15 +111,15 @@ header h1 {
     margin-left: 1em;
 }
 header nav ul li a {
-    border-top: 3px solid #9e9e9e;
-    border-bottom: 3px solid #9e9e9e;
+    border-top: 3px solid #ec008c;
+    border-bottom: 3px solid #ec008c;
     display: block;
     box-shadow: 0 -2px 6px -6px rgba(0,0,0,.2), 3px 0px 2px -6px black, -2px 0px 6px -6px black;
     overflow: hidden;
 
 }
 header nav ul li a svg:hover{
-    fill: #9e9e9e;
+    fill: #fff;
 }
 header nav ul li a.active{
     border-bottom: none;
@@ -288,17 +293,19 @@ label{
 .form-whole {
     margin: 0 auto;
     width: 80%;
+    max-width: 300px
 }
 .form{
     margin-bottom:10px;
     width:100%;
 }
 .form-icon{
+    display: block;
     color:#000;
     float:left;
     padding 1px;
     margin-bottom:1px;
-    text-align:center;
+
 }
 .formfield {
     color:#000000;
@@ -329,14 +336,26 @@ label{
     box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
 }
 /*///////////////////////colors////////////////////////////////*/
+/*header nav ul li a.link-1,*/
+/*section#home{ background-color: #1976D2; }*/
+/*header nav ul li a.link-2,*/
+/*section#portfolio{ background-color: #FBC02D; }*/
+/*header nav ul li a.link-3,*/
+/*section#resume{ background-color: #F44336; }*/
+/*header nav ul li a.link-4,*/
+/*section#contact{ background-color: #000; }*/
 header nav ul li a.link-1,
-section#home{ background-color: #1976D2; }
+section#home{ background-color: rgba(0,0,0,.1); }
 header nav ul li a.link-2,
-section#portfolio{ background-color: #FBC02D; }
+section#portfolio{ background-color:rgba(0,0,0,.1); }
 header nav ul li a.link-3,
-section#resume{ background-color: #F44336; }
+section#resume{ background-color: rgba(0,0,0,.1); }
 header nav ul li a.link-4,
-section#contact{ background-color: #000; }
+section#contact{ background-color: rgba(0,0,0,.1); }
+
+header nav ul li a.active,
+section.active{ background-color: #1caab1; }
+
 /*///////////////////////wide screens/////////////////////////*/
 @media (min-width:1476px){
     header h1 {
@@ -344,7 +363,7 @@ section#contact{ background-color: #000; }
     }
     header nav ul {
         float: right;
-        margin-right: 10px;
+        margin-right: 15%;
     }
     header svg{
         transform: translateY(10px);
@@ -353,6 +372,7 @@ section#contact{ background-color: #000; }
     }
     header nav ul li {
         display: inline-block;
+        
     }
     header nav ul li a {
         height: 60px;
@@ -362,9 +382,13 @@ section#contact{ background-color: #000; }
     header nav ul li a.active{
         height: 63px;
     }
+    section{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
     #gallery li img{
-        width: 13em;
-        height: 11em;
+        width: 10em;
+        height: 8em;
     }
 }
 @media (min-width: 900px) and (max-width:1475px){
@@ -398,6 +422,11 @@ section#contact{ background-color: #000; }
 }
 /*///////////////////////wide screens/////////////////////////*/
 @media (min-width:701px) and (max-width:899px){
+    section{
+        margin: 0 auto;
+        width: 80%;
+        background: rgba(0,0,0,.3);
+    }
     header h1 {
         float: left;
     }

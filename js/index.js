@@ -1,8 +1,28 @@
-$(document).ready( function() {
+ var pattern = Trianglify({
+         width: window.innerWidth,
+        height: window.innerHeight,
+        variance: "0.99",
+        cell_size: 100,
+        palette: Trianglify.colorbrewer
+    });
+    document.body.appendChild(pattern.canvas())
+    
+    $(window).resize(function() {
+         var pattern = Trianglify({
+         width: window.innerWidth,
+        height: window.innerHeight,
+        variance: "0.99",
+        cell_size: 100,
+        palette: Trianglify.colorbrewer
+    });
+    document.body.appendChild(pattern.canvas())
+    });
     // On click, remove class on active element, add it to the new one
     $('header nav a').click( function(e) {
         $('header nav a.active').removeClass('active');
         $(this).addClass('active');
+        $('section.active').removeClass('active');
+        $(section.focus).addClass('active');
         // Scroll to anchor
         $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 100},'slow');
         e.preventDefault();
@@ -14,4 +34,3 @@ $(document).ready( function() {
         $('header nav a.active').removeClass('active');
         $('header nav a.link-' + position).addClass('active');
     });
-});
