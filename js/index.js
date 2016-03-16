@@ -21,8 +21,6 @@
     $('header nav a').click( function(e) {
         $('header nav a.active').removeClass('active');
         $(this).addClass('active');
-        $('section.active').removeClass('active');
-        $(section.focus).addClass('active');
         // Scroll to anchor
         $('html,body').animate({scrollTop: $($(this).attr('href')).offset().top - 100},'slow');
         e.preventDefault();

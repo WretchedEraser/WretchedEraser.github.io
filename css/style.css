@@ -2,6 +2,8 @@
 canvas{
     position: fixed;
     z-index: -5;
+    height: 100%;
+    width: 100%;
 }
 body, ul, li {
     list-style: none;
@@ -165,7 +167,7 @@ section#home { margin-top: 100px;}
 #gallery li img{
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0,0,0,.10);
-    background: #FFA000;
+    background: #1caab1;
     padding: .51em;
     transition: height .5s ease;
     transition: width .5s ease;
@@ -422,11 +424,6 @@ section.active{ background-color: #1caab1; }
 }
 /*///////////////////////wide screens/////////////////////////*/
 @media (min-width:701px) and (max-width:899px){
-    section{
-        margin: 0 auto;
-        width: 80%;
-        background: rgba(0,0,0,.3);
-    }
     header h1 {
         float: left;
     }
