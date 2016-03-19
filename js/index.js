@@ -2,8 +2,8 @@
          width: window.innerWidth,
         height: window.innerHeight,
         variance: "0.99",
-        cell_size: 100,
-        palette: Trianglify.colorbrewer
+        cell_size: 100
+//        palette: GnBu
     });
     document.body.appendChild(pattern.canvas())
     

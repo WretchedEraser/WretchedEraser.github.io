@@ -14,3 +14,6 @@ resume icon Created by Irene Trautluft
 
 fought spam with http://webdesign.tutsplus.com/tutorials/quick-tip-add-a-formspree-form-to-your-static-sites--cms-23870
 
+bg from http://qrohlf.com/trianglify/
+
+animations from https://github.com/daneden/animate.css

@@ -121,7 +121,7 @@ header nav ul li a {
 
 }
 header nav ul li a svg:hover{
-    fill: #fff;
+    fill: #ec008c;
 }
 header nav ul li a.active{
     border-bottom: none;
@@ -333,27 +333,20 @@ label{
     margin: 0 auto;
 }
 .btn:hover{
-    background:#9e9e9e;
+    background:#ec008c;
     color: #fff;
     box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
 }
 /*///////////////////////colors////////////////////////////////*/
-/*header nav ul li a.link-1,*/
-/*section#home{ background-color: #1976D2; }*/
-/*header nav ul li a.link-2,*/
-/*section#portfolio{ background-color: #FBC02D; }*/
-/*header nav ul li a.link-3,*/
-/*section#resume{ background-color: #F44336; }*/
-/*header nav ul li a.link-4,*/
-/*section#contact{ background-color: #000; }*/
+
 header nav ul li a.link-1,
-section#home{ background-color: rgba(0,0,0,.1); }
+section#home{ background-color: rgba(0,0,0,.3); }
 header nav ul li a.link-2,
-section#portfolio{ background-color:rgba(0,0,0,.1); }
+section#portfolio{ background-color:rgba(0,0,0,.3); }
 header nav ul li a.link-3,
-section#resume{ background-color: rgba(0,0,0,.1); }
+section#resume{ background-color: rgba(0,0,0,.3); }
 header nav ul li a.link-4,
-section#contact{ background-color: rgba(0,0,0,.1); }
+section#contact{ background-color: rgba(0,0,0,.3); }
 
 header nav ul li a.active,
 section.active{ background-color: #1caab1; }
