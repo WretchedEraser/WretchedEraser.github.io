@@ -9,6 +9,10 @@ body, ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    margin-top: 6px;
+>>>>>>> parent of cc690fb... trimming stylesheet
 }
 body {
     background-color: #ccc;
@@ -87,7 +91,7 @@ section p {
 }
 .name  {
     margin-left: 10px;
-
+    margin-top: 0;
     display: inline-block;
 }
 .namelabel{
@@ -351,7 +355,7 @@ section#contact{ background-color: rgba(0,0,0,.3); }
 header nav ul li a.active,
 section.active{ background-color: #1caab1; }
 
-////////////wide screens///////////////
+/*///////////////////////wide screens/////////////////////////*/
 @media (min-width:1476px){
     header h1 {
         float: left;
@@ -371,7 +375,7 @@ section.active{ background-color: #1caab1; }
     header nav ul li a {
         height: 60px;
         padding: 13.5px 15px;
-        transform: translateY(-95px)
+        transform: translateY(-84px)
     }
     header nav ul li a.active{
         height: 63px;
@@ -404,7 +408,7 @@ section.active{ background-color: #1caab1; }
     header nav ul li a {
         height: 60px;
         padding: 13.5px 15px;
-        transform: translateY(-95px);
+        transform: translateY(-84px);
     }
     header nav ul li a.active{
         height: 63px;
@@ -414,7 +418,7 @@ section.active{ background-color: #1caab1; }
         height: 8em;
     }
 }
-////////////wide screens///////////////
+/*///////////////////////wide screens/////////////////////////*/
 @media (min-width:701px) and (max-width:899px){
     header h1 {
         float: left;
@@ -434,7 +438,7 @@ section.active{ background-color: #1caab1; }
     header nav ul li a {
         height: 60px;
         padding: 13.5px 15px;
-        transform: translateY(-95px)
+        transform: translateY(-84px)
     }
     header nav ul li a.active{
         height: 63px;
@@ -444,7 +448,7 @@ section.active{ background-color: #1caab1; }
         height: 6em;
     }
 }
-///mobile and small screens to prevent nav warp//////
+/*/////////mobile and small screens to prevent nav warp///////*/
 @media handheld, (min-width:433px) and (max-width:700px){
     header {
         padding-left: 5%;
@@ -454,7 +458,7 @@ section.active{ background-color: #1caab1; }
         height: 40px;
     }
     header h1 {
-        margin: 10px 0px;
+        margin: 5px 0px;
     }
     header nav svg{
         height: 30px;
@@ -467,7 +471,6 @@ section.active{ background-color: #1caab1; }
         transform: translateY(-15px);
     }
     .name  {
-        margin-top: 13px;
         margin-left: 10px;
         display: block;
         text-align: center;
@@ -511,7 +514,6 @@ section.active{ background-color: #1caab1; }
         transform: translateY(-15px);
     }
     .name  {
-        margin-top: 20px;
         margin-left: 10px;
         display: block;
         text-align: center;
@@ -536,7 +538,7 @@ section.active{ background-color: #1caab1; }
         text-align: center;
     }
     header nav ul li a {
-        transform: translateY(-35px);
+        transform: translateY(-26px);
         height: 20px;
         padding: 10px 10px;
     }
@@ -548,7 +550,7 @@ section.active{ background-color: #1caab1; }
         height: 4.65em;
     }
 }
-/////////baby phones and potato///////
+/*/////////baby phones and potato///////*/
 @media handheld, (max-width: 343px){
     li{
         font-size: 10px;

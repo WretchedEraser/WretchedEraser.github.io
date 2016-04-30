@@ -1,57 +1,32 @@
-////////////////////////general///////////////////////
-
-//colors
-$color-main-pink: #ec008c;
-$color-accent-teal: #1caab1;
-$color-main-text: #fff;
-$color-background: #ccc;
-$color-box-shadow: rgba(0, 0, 0, .2);
-$color-lightbox: rgba(0, 0, 0, .8);
-$color-fb-blue: #3b5998;
-$color-twitter: #55acee;
-$color-linkedin: #0077b5;
-$github-black: #181717;
-$color-object-white: #fff;
-
-//fonts
-$font-header: 'futura-pt', 'Helvetica Neue', 'Arial', sans-serif;
-$font-body: 'raleway', 'Helvetica Neue', 'Arial', sans-serif;
-//box shadow
-$box-shadow-default: inset 0 2px 6px $color-box-shadow;
+/*////////////////////////general/////////////////////////////*/
 
 canvas {
-  height: 100%;
   position: fixed;
-  width: 100%;
   z-index: -5;
+  height: 100%;
+  width: 100%;
 }
 
-body,
-ul,
-li {
+body, ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: $color-background;
+  background-color: #ccc;
 }
 
 footer {
-  bottom: 0;
   position: static;
+  bottom: 0;
 }
 
-//general text styling
+/*general text styling*/
 
-h1,
-h2,
-h3,
-h4,
-figure {
-  color: $color-main-text;
-  font-family: $font-header;
+h1, h2, h3, h4, figure {
+  font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
+  color: #fff;
 }
 
 h2 {
@@ -68,8 +43,8 @@ h4 {
 }
 
 p {
-  color: $color-main-text;
-  font-family: $font-body;
+  font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
+  color: #fff;
 }
 
 label {
@@ -90,17 +65,15 @@ textarea {
 }
 
 input {
-  &[type="text"],
-  &[type="button"],
-  &[type="submit"],
-  &[type="email"],
-  &[type="tel"] {
+  &[type="text"], &[type="button"], &[type="submit"], &[type="email"], &[type="tel"] {
     -webkit-appearance: none;
     border-radius: 0;
   }
 }
 
 section {
+  /*    width: 70%;*/
+  /*    margin: 0 auto;*/
   height: 1000px;
   padding-left: 5%;
   padding-right: 5%;
@@ -127,13 +100,14 @@ section {
   }
 }
 
-////////////////////general header styling//////////////////
+/*////////////////////general header styling//////////////////*/
 
 .name {
   img {
     height: 50px;
     width: 50px;
 
+    /*     transform: translateX(-200px);*/
     transform: translateY(21px);
   }
 
@@ -143,6 +117,7 @@ section {
 }
 
 .namelabel {
+  /*    position: absolute;*/
   display: inline-block;
   font-size: 30px;
   transform: translateY(6px);
@@ -152,7 +127,7 @@ header {
   height: 100px;
   width: 100%;
   box-sizing: border-box;
-  background-color: $color-main-pink;
+  background-color: #ec008c;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -165,14 +140,14 @@ header {
   }
 
   nav ul li a {
-    border-top: 3px solid $color-main-pink;
-    border-bottom: 3px solid $color-main-pink;
+    border-top: 3px solid #ec008c;
+    border-bottom: 3px solid #ec008c;
     display: block;
     box-shadow: 0 -2px 6px -6px rgba(0, 0, 0, 0.2), 3px 0px 2px -6px black, -2px 0px 6px -6px black;
     overflow: hidden;
 
     svg:hover {
-      fill: $color-main-pink;
+      fill: #ec008c;
     }
 
     &.active {
@@ -185,7 +160,7 @@ section#home {
   margin-top: 100px;
 }
 
-///////////home endless slideshow////////////////////////////
+/*///////////home endless slideshow////////////////////////////*/
 
 #tech-slideshow {
   height: 500px;
@@ -203,8 +178,32 @@ section#home {
     height: 100%;
     box-sizing: border-box;
     z-index: 0;
-    transition: opacity .5s ease-out;
-    animation: moveSlideshow 60s linear infinite;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    -webkit-animation: moveSlideshow 60s linear infinite;
+    -moz-animation: moveSlideshow 60s linear infinite;
+  }
+}
+
+@-webkit-keyframes moveSlideshow {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2240px;
+  }
+}
+
+@-moz-keyframes moveSlideshow {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -2240px;
   }
 }
 
@@ -218,7 +217,7 @@ section#home {
   }
 }
 
-/////////general gallery light box styling////////////////////
+/*/////////general gallery light box styling////////////////////*/
 
 #gallery {
   li {
@@ -240,11 +239,10 @@ section#home {
 }
 
 .lightbox {
-  // Default lightbox to hidden
-  background: $color-lightbox;
+  /** Default lightbox to hidden */
   display: none;
 
-  // Position and style
+  /** Position and style */
   position: fixed;
   z-index: 3;
   width: 101%;
@@ -252,6 +250,7 @@ section#home {
   text-align: center;
   top: 0;
   left: 0;
+  background: rgba(0, 0, 0, 0.8);
 
   figure {
     img {
@@ -275,7 +274,7 @@ section#home {
   }
 
   &:target {
-    // Remove default browser outline
+    /** Remove default browser outline */
     outline: none;
 
     /** Unhide lightbox **/
@@ -283,7 +282,11 @@ section#home {
   }
 }
 
-/////////////////////resume formating/////////////////
+/*/////////////////////resume formating/////////////////*/
+
+section .resume {
+  background: green;
+}
 
 .res-wrapper {
   float: left;
@@ -296,18 +299,18 @@ section#home {
 
 .work-ul {
   margin-top: 25px;
-  font-family: $font-body;
-  color: $color-main-text;
+  font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
+  color: #fff;
 }
 
 .eduul {
   margin-top: -25px;
-  font-family: $font-body;
-  color: $color-main-text;
+  font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
+  color: #fff;
 }
 
 .eduheading {
-  font-family: $font-header;
+  font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 1.5em;
 }
 
@@ -332,7 +335,7 @@ section#home {
   transform: translateX(22%);
 }
 
-/////////////////////contact form style//////////////////////
+/*/////////////////////contact form style//////////////////////*/
 
 label {
   visibility: hidden;
@@ -351,20 +354,20 @@ label {
 }
 
 .facebook svg:hover {
-  fill: $color-fb-blue;
+  fill: #3B5998;
 }
 
 .twitter svg:hover {
-  fill: $color-twitter;
+  fill: #55ACEE;
 }
 
 .linkedin svg:hover {
-  fill: $color-linkedin;
+  fill: #0077B5;
 }
 
 .github svg:hover {
-  fill: $github-black;
-  stroke: $color-object-white;
+  fill: #181717;
+  stroke: #fff;
   stroke-width: 2%;
 }
 
@@ -389,7 +392,7 @@ label {
 
 .formfield {
   color: #000000;
-  background: $color-object-white;
+  background: #FFFFFF;
   border: none;
   padding: 15.5px;
   width: 95%;
@@ -401,7 +404,7 @@ label {
 .btn {
   display: block;
   border: none;
-  background: $color-object-white;
+  background: #fff;
   width: 50%;
   color: #000;
   padding: 4%;
@@ -413,21 +416,14 @@ label {
 
   &:hover {
     background: #ec008c;
-    color: $color-object-white;
+    color: #fff;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 }
 
 /*///////////////////////colors////////////////////////////////*/
 
-header nav ul li a.link-1,
-section#home,
-header nav ul li a.link-2,
-section#portfolio,
-header nav ul li a.link-3,
-section#resume,
-header nav ul li a.link-4,
-section#contact {
+header nav ul li a.link-1, section#home, header nav ul li a.link-2, section#portfolio, header nav ul li a.link-3, section#resume, header nav ul li a.link-4, section#contact {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -435,7 +431,7 @@ header nav ul li a.active, section.active {
   background-color: #1caab1;
 }
 
-///////////////////////wide screens/////////////////////////*/
+/*///////////////////////wide screens/////////////////////////*/
 @media (min-width: 1476px) {
   header {
     h1 {
