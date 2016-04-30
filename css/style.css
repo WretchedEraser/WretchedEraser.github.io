@@ -9,10 +9,7 @@ body, ul, li {
     list-style: none;
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-=======
     margin-top: 6px;
->>>>>>> parent of cc690fb... trimming stylesheet
 }
 body {
     background-color: #ccc;
@@ -91,7 +88,7 @@ section p {
 }
 .name  {
     margin-left: 10px;
-    margin-top: 0;
+    margin-top: 5px;
     display: inline-block;
 }
 .namelabel{
@@ -472,6 +469,7 @@ section.active{ background-color: #1caab1; }
     }
     .name  {
         margin-left: 10px;
+        margin-top: 20px;
         display: block;
         text-align: center;
     }
@@ -482,7 +480,7 @@ section.active{ background-color: #1caab1; }
     }
     header nav ul li {
         width: 23.5%;
-        /*        margin-top: 0px;*/
+        margin-top: 0px;
         height: 50px;
         display: inline-block;
         text-align: center;
@@ -515,6 +513,7 @@ section.active{ background-color: #1caab1; }
     }
     .name  {
         margin-left: 10px;
+        margin-top: 20px;
         display: block;
         text-align: center;
     }
@@ -534,6 +533,7 @@ section.active{ background-color: #1caab1; }
     header nav ul li {
         width: 23.5%;
         height: 50px;
+        margin-top: -3px;
         display: inline-block;
         text-align: center;
     }
