@@ -1,32 +1,57 @@
-/*////////////////////////general/////////////////////////////*/
+////////////////////////general///////////////////////
+
+//colors
+$color-main-pink: #ec008c;
+$color-accent-teal: #1caab1;
+$color-main-text: #fff;
+$color-background: #ccc;
+$color-box-shadow: rgba(0, 0, 0, .2);
+$color-lightbox: rgba(0, 0, 0, .8);
+$color-fb-blue: #3b5998;
+$color-twitter: #55acee;
+$color-linkedin: #0077b5;
+$github-black: #181717;
+$color-object-white: #fff;
+
+//fonts
+$font-header: 'futura-pt', 'Helvetica Neue', 'Arial', sans-serif;
+$font-body: 'raleway', 'Helvetica Neue', 'Arial', sans-serif;
+//box shadow
+$box-shadow-default: inset 0 2px 6px $color-box-shadow;
 
 canvas {
-  position: fixed;
-  z-index: -5;
   height: 100%;
+  position: fixed;
   width: 100%;
+  z-index: -5;
 }
 
-body, ul, li {
+body,
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #ccc;
+  background-color: $color-background;
 }
 
 footer {
-  position: static;
   bottom: 0;
+  position: static;
 }
 
-/*general text styling*/
+//general text styling
 
-h1, h2, h3, h4, figure {
-  font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
-  color: #fff;
+h1,
+h2,
+h3,
+h4,
+figure {
+  color: $color-main-text;
+  font-family: $font-header;
 }
 
 h2 {
@@ -43,8 +68,8 @@ h4 {
 }
 
 p {
-  font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
-  color: #fff;
+  color: $color-main-text;
+  font-family: $font-body;
 }
 
 label {
@@ -65,15 +90,17 @@ textarea {
 }
 
 input {
-  &[type="text"], &[type="button"], &[type="submit"], &[type="email"], &[type="tel"] {
+  &[type="text"],
+  &[type="button"],
+  &[type="submit"],
+  &[type="email"],
+  &[type="tel"] {
     -webkit-appearance: none;
     border-radius: 0;
   }
 }
 
 section {
-  /*    width: 70%;*/
-  /*    margin: 0 auto;*/
   height: 1000px;
   padding-left: 5%;
   padding-right: 5%;
@@ -100,14 +127,13 @@ section {
   }
 }
 
-/*////////////////////general header styling//////////////////*/
+////////////////////general header styling//////////////////
 
 .name {
   img {
     height: 50px;
     width: 50px;
 
-    /*     transform: translateX(-200px);*/
     transform: translateY(21px);
   }
 
@@ -117,7 +143,6 @@ section {
 }
 
 .namelabel {
-  /*    position: absolute;*/
   display: inline-block;
   font-size: 30px;
   transform: translateY(6px);
@@ -127,7 +152,7 @@ header {
   height: 100px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ec008c;
+  background-color: $color-main-pink;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -140,14 +165,14 @@ header {
   }
 
   nav ul li a {
-    border-top: 3px solid #ec008c;
-    border-bottom: 3px solid #ec008c;
+    border-top: 3px solid $color-main-pink;
+    border-bottom: 3px solid $color-main-pink;
     display: block;
     box-shadow: 0 -2px 6px -6px rgba(0, 0, 0, 0.2), 3px 0px 2px -6px black, -2px 0px 6px -6px black;
     overflow: hidden;
 
     svg:hover {
-      fill: #ec008c;
+      fill: $color-main-pink;
     }
 
     &.active {
@@ -160,7 +185,7 @@ section#home {
   margin-top: 100px;
 }
 
-/*///////////home endless slideshow////////////////////////////*/
+///////////home endless slideshow////////////////////////////
 
 #tech-slideshow {
   height: 500px;
@@ -178,32 +203,8 @@ section#home {
     height: 100%;
     box-sizing: border-box;
     z-index: 0;
-    -moz-transition: opacity 0.5s ease-out;
-    -o-transition: opacity 0.5s ease-out;
-    -webkit-transition: opacity 0.5s ease-out;
-    -ms-transition: opacity 0.5s ease-out;
-    -webkit-animation: moveSlideshow 60s linear infinite;
-    -moz-animation: moveSlideshow 60s linear infinite;
-  }
-}
-
-@-webkit-keyframes moveSlideshow {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -2240px;
-  }
-}
-
-@-moz-keyframes moveSlideshow {
-  0% {
-    left: 0;
-  }
-
-  100% {
-    left: -2240px;
+    transition: opacity .5s ease-out;
+    animation: moveSlideshow 60s linear infinite;
   }
 }
 
@@ -217,7 +218,7 @@ section#home {
   }
 }
 
-/*/////////general gallery light box styling////////////////////*/
+/////////general gallery light box styling////////////////////
 
 #gallery {
   li {
@@ -239,10 +240,11 @@ section#home {
 }
 
 .lightbox {
-  /** Default lightbox to hidden */
+  // Default lightbox to hidden
+  background: $color-lightbox;
   display: none;
 
-  /** Position and style */
+  // Position and style
   position: fixed;
   z-index: 3;
   width: 101%;
@@ -250,7 +252,6 @@ section#home {
   text-align: center;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
 
   figure {
     img {
@@ -274,7 +275,7 @@ section#home {
   }
 
   &:target {
-    /** Remove default browser outline */
+    // Remove default browser outline
     outline: none;
 
     /** Unhide lightbox **/
@@ -282,11 +283,7 @@ section#home {
   }
 }
 
-/*/////////////////////resume formating/////////////////*/
-
-section .resume {
-  background: green;
-}
+/////////////////////resume formating/////////////////
 
 .res-wrapper {
   float: left;
@@ -299,18 +296,18 @@ section .resume {
 
 .work-ul {
   margin-top: 25px;
-  font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
-  color: #fff;
+  font-family: $font-body;
+  color: $color-main-text;
 }
 
 .eduul {
   margin-top: -25px;
-  font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
-  color: #fff;
+  font-family: $font-body;
+  color: $color-main-text;
 }
 
 .eduheading {
-  font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: $font-header;
   font-size: 1.5em;
 }
 
@@ -335,7 +332,7 @@ section .resume {
   transform: translateX(22%);
 }
 
-/*/////////////////////contact form style//////////////////////*/
+/////////////////////contact form style//////////////////////
 
 label {
   visibility: hidden;
@@ -354,20 +351,20 @@ label {
 }
 
 .facebook svg:hover {
-  fill: #3B5998;
+  fill: $color-fb-blue;
 }
 
 .twitter svg:hover {
-  fill: #55ACEE;
+  fill: $color-twitter;
 }
 
 .linkedin svg:hover {
-  fill: #0077B5;
+  fill: $color-linkedin;
 }
 
 .github svg:hover {
-  fill: #181717;
-  stroke: #fff;
+  fill: $github-black;
+  stroke: $color-object-white;
   stroke-width: 2%;
 }
 
@@ -392,7 +389,7 @@ label {
 
 .formfield {
   color: #000000;
-  background: #FFFFFF;
+  background: $color-object-white;
   border: none;
   padding: 15.5px;
   width: 95%;
@@ -404,7 +401,7 @@ label {
 .btn {
   display: block;
   border: none;
-  background: #fff;
+  background: $color-object-white;
   width: 50%;
   color: #000;
   padding: 4%;
@@ -416,14 +413,21 @@ label {
 
   &:hover {
     background: #ec008c;
-    color: #fff;
+    color: $color-object-white;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
   }
 }
 
 /*///////////////////////colors////////////////////////////////*/
 
-header nav ul li a.link-1, section#home, header nav ul li a.link-2, section#portfolio, header nav ul li a.link-3, section#resume, header nav ul li a.link-4, section#contact {
+header nav ul li a.link-1,
+section#home,
+header nav ul li a.link-2,
+section#portfolio,
+header nav ul li a.link-3,
+section#resume,
+header nav ul li a.link-4,
+section#contact {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -431,7 +435,7 @@ header nav ul li a.active, section.active {
   background-color: #1caab1;
 }
 
-/*///////////////////////wide screens/////////////////////////*/
+///////////////////////wide screens/////////////////////////*/
 @media (min-width: 1476px) {
   header {
     h1 {
