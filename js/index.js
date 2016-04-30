@@ -5,8 +5,8 @@
         cell_size: 100
 //        palette: GnBu
     });
-    document.body.appendChild(pattern.canvas())
-    
+    document.body.appendChild(pattern.canvas());
+
     $(window).resize(function() {
          var pattern = Trianglify({
          width: window.innerWidth,
@@ -15,7 +15,7 @@
         cell_size: 100,
         palette: Trianglify.colorbrewer
     });
-    document.body.appendChild(pattern.canvas())
+    document.body.appendChild(pattern.canvas());
     });
     // On click, remove class on active element, add it to the new one
     $('header nav a').click( function(e) {
