@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <title>Brendan Hawthorne</title>
 
-    <!--        favicons for all browsers-->
-    
-    <link rel="stylesheet" href="https://github.com/necolas/normalize.css/blob/master/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -28,18 +25,11 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-   
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
-    <script src="js/index.js"></script>
-    
     <header>
         <figure class="name animated fadeInLeft">
             <img src="img/logo.svg" alt="logo">
             <figcaption class="namelabel">Brendan Hawthorne</figcaption>
         </figure>
-        <!--        </div>-->
         <nav>
             <ul>
                 <li>
@@ -68,12 +58,8 @@
 
     <section id="home" class="link-1">
         <h2>Home</h2>
+        <img src="img/home.png" alt="Image of LightBulb">
         <p>Hi, I’m Brendan Hawthorne a Visual Communication Design student at Eastern Washington University. I was Born and raised in the Puget Sound area of Washington state and am currently living in Spokane, Washington. Below are a few samples of my work and past experience.</p><br/><br/>
-        <div class="slideshow">
-            <div id="tech-slideshow">
-                <div id="tech-slideshow-1"></div>
-            </div>
-        </div>
     </section>
     <section id="portfolio" class="link-2">
         <h2>Portfolio</h2>
@@ -93,17 +79,17 @@
                 </li>
                 <li>
                     <a href="#img3">
-                        <img src="img/img-03.jpg" alt="image of narrative line 1">
+                        <img src="img/img-03.jpg" alt="icon jam #1">
                     </a>
                 </li>
                 <li>
                     <a href="#img4">
-                        <img src="img/img-04.jpg" alt="narrative line page 2">
+                        <img src="img/img-04.jpg" alt="icon jam #2">
                     </a>
                 </li>
                 <li>
                     <a href="#img5">
-                        <img src="img/img-05.jpg" alt="narrative line page 4">
+                        <img src="img/img-05.jpg" alt="icon jam #3">
                     </a>
                 </li>
                 <li>
@@ -199,19 +185,19 @@
         <a href="#_" class="lightbox" id="img3">
             <figure>
                 <img src="img/img-03.jpg" alt="narrative line page 1">
-                <br><figcaption>Narrative line 1 for desn 100 <br>Click or touch anywhere to return</figcaption>
+                <br><figcaption>Iconjam Series #1 <br>Click or touch anywhere to return</figcaption>
             </figure>
         </a>
         <a href="#_" class="lightbox" id="img4">
             <figure>
                 <img src="img/img-04.jpg" alt="narrative line page 2">
-                <br><figcaption>Narrative line 2 for desn 100 <br>Click or touch anywhere to return</figcaption>
+                <br><figcaption>Iconjam Series #2 <br>Click or touch anywhere to return</figcaption>
             </figure>
         </a>
         <a href="#_" class="lightbox" id="img5">
             <figure>
                 <img src="img/img-05.jpg" alt="narrative line page 4">
-                <br><figcaption>Narrative line 4 for desn 100 <br>Click or touch anywhere to return</figcaption>
+                <br><figcaption>Iconjam Series #3 <br>Click or touch anywhere to return</figcaption>
             </figure>
         </a>
         <a href="#_" class="lightbox" id="img6">
@@ -353,7 +339,7 @@
                 <ul class="eduul">
                     <li>html 5 </li>
                     <li>CSS 3</li>
-                    <li>JavaScript (novice)</li>
+                    <li>JavaScript</li>
                     <li>java</li>
                     <li>C/C++, Unix Shell</li>
                     <li>Python</li>
@@ -365,55 +351,57 @@
     </section>
     <section id="contact" class="link-4">
         <h2>Contact</h2>
-        <a href="https://www.facebook.com/WretchedEraser" class="facebook">
-            <figure>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff" class="social-icon"><path id="facebook-square-icon" d="M50.473,50v412h412V50H50.473z M324.215,160.658c0,0-22.893,0-31.988,0c-11.291,0-13.645,4.625-13.645,16.309c0,9.723,0,28.227,0,28.227h45.633l-4.391,49.551h-41.242v148.03h-59.111V255.372h-30.74v-50.178h30.74c0,0,0-7.215,0-39.517c0-37.087,19.832-56.452,63.818-56.452c7.205,0,40.926,0,40.926,0V160.658z"/></svg>
-                <figcaption class="social-caption">facebook</figcaption>
+        <div class="social-container">
+        <a href="https://www.facebook.com/WretchedEraser" class="facebook ">
+            <figure class="social">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00" class="social-icon"><path id="facebook-square-icon" d="M50.473,50v412h412V50H50.473z M324.215,160.658c0,0-22.893,0-31.988,0c-11.291,0-13.645,4.625-13.645,16.309c0,9.723,0,28.227,0,28.227h45.633l-4.391,49.551h-41.242v148.03h-59.111V255.372h-30.74v-50.178h30.74c0,0,0-7.215,0-39.517c0-37.087,19.832-56.452,63.818-56.452c7.205,0,40.926,0,40.926,0V160.658z"/></svg>
+                <!-- <figcaption class="social-caption">facebook</figcaption> -->
             </figure>
         </a>
-        <a href="https://twitter.com/WretchedEraser" class="twitter">
-            <figure>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff" class="social-icon"><path id="twitter-2-icon" d="M50,50v412h412V50H50z M370.942,207.125c3.553,79.059-55.408,167.203-159.768,167.203c-31.743,0-61.289-9.305-86.163-25.253c29.82,3.515,59.585-4.758,83.217-23.278c-24.596-0.453-45.356-16.703-52.508-39.035c8.808,1.684,17.473,1.19,25.383-0.962c-27.03-5.433-45.692-29.784-45.083-55.826c7.577,4.211,16.245,6.74,25.46,7.032c-25.034-16.73-32.12-49.786-17.396-75.045c27.723,34.006,69.143,56.385,115.857,58.729c-8.199-35.16,18.474-69.019,54.755-69.019c16.168,0,30.776,6.825,41.029,17.75c12.804-2.52,24.833-7.198,35.694-13.639c-4.197,13.126-13.11,24.141-24.715,31.098c11.37-1.357,22.204-4.379,32.284-8.851C391.454,189.301,381.926,199.201,370.942,207.125z"/></svg>
-                <figcaption class="social-caption">Twitter</figcaption>
+        <a href="https://twitter.com/WretchedEraser" class="twitter ">
+            <figure class="social">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00" class="social-icon"><path id="twitter-2-icon" d="M50,50v412h412V50H50z M370.942,207.125c3.553,79.059-55.408,167.203-159.768,167.203c-31.743,0-61.289-9.305-86.163-25.253c29.82,3.515,59.585-4.758,83.217-23.278c-24.596-0.453-45.356-16.703-52.508-39.035c8.808,1.684,17.473,1.19,25.383-0.962c-27.03-5.433-45.692-29.784-45.083-55.826c7.577,4.211,16.245,6.74,25.46,7.032c-25.034-16.73-32.12-49.786-17.396-75.045c27.723,34.006,69.143,56.385,115.857,58.729c-8.199-35.16,18.474-69.019,54.755-69.019c16.168,0,30.776,6.825,41.029,17.75c12.804-2.52,24.833-7.198,35.694-13.639c-4.197,13.126-13.11,24.141-24.715,31.098c11.37-1.357,22.204-4.379,32.284-8.851C391.454,189.301,381.926,199.201,370.942,207.125z"/></svg>
+                <!-- <figcaption class="social-caption">Twitter</figcaption> -->
             </figure>
         </a>
-        <a href="https://www.linkedin.com/in/brendanhawthorne" class="linkedin">
-            <figure>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff" class="social-icon"><path id="linkedin-square-icon" d="M50.473,50v412h412V50H50.473z M181.522,392.99h-56.536V210.336h56.536V392.99z M152.984,186.417c-18.464,0-33.432-15.09-33.432-33.704c0-18.614,14.968-33.704,33.432-33.704c18.463,0,33.432,15.089,33.432,33.704C186.416,171.328,171.447,186.417,152.984,186.417z M393.394,392.99h-56.262c0,0,0-69.582,0-95.881c0-26.296-9.99-40.974-30.782-40.974c-22.629,0-34.452,15.289-34.452,40.974c0,28.133,0,95.881,0,95.881h-54.225V210.336h54.225v24.599c0,0,16.309-30.171,55.04-30.171c38.733,0,66.456,23.648,66.456,72.572C393.394,326.262,393.394,392.99,393.394,392.99z"/></svg>
-                <figcaption class="social-caption">LinkedIn</figcaption>
+        <a href="https://www.linkedin.com/in/brendanhawthorne" class="linkedin ">
+            <figure class="social">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00" class="social-icon"><path id="linkedin-square-icon" d="M50.473,50v412h412V50H50.473z M181.522,392.99h-56.536V210.336h56.536V392.99z M152.984,186.417c-18.464,0-33.432-15.09-33.432-33.704c0-18.614,14.968-33.704,33.432-33.704c18.463,0,33.432,15.089,33.432,33.704C186.416,171.328,171.447,186.417,152.984,186.417z M393.394,392.99h-56.262c0,0,0-69.582,0-95.881c0-26.296-9.99-40.974-30.782-40.974c-22.629,0-34.452,15.289-34.452,40.974c0,28.133,0,95.881,0,95.881h-54.225V210.336h54.225v24.599c0,0,16.309-30.171,55.04-30.171c38.733,0,66.456,23.648,66.456,72.572C393.394,326.262,393.394,392.99,393.394,392.99z"/></svg>
+                <!-- <figcaption class="social-caption">LinkedIn</figcaption> -->
             </figure>
         </a>
-        <a href="https://github.com/WretchedEraser/" class="github">
-            <figure>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="social-icon" fill="#fff"><path id="github-2-icon" d="M50,50v412h412V50H50z M301.672,396.377c-7.311,1.408-9.621-3.086-9.621-6.924c0-4.74,0-20.277,0-39.57c0-13.448-4.73-22.237-9.895-26.709c32.107-3.567,65.846-15.76,65.846-71.149c0-15.749-5.598-28.61-14.846-38.703c1.49-3.638,6.432-18.307-1.42-38.162c0,0-12.086-3.873-39.617,14.786c-11.512-3.192-23.867-4.799-36.119-4.858c-12.252,0.059-24.586,1.667-36.098,4.858c-27.553-18.659-39.664-14.786-39.664-14.786c-7.816,19.855-2.887,34.524-1.385,38.162c-9.225,10.092-14.857,22.954-14.857,38.703c0,55.26,33.656,67.629,65.693,71.267c-4.131,3.603-7.863,9.962-9.152,19.28c-8.24,3.686-29.104,10.057-41.965-11.982c0,0-7.627-13.846-22.109-14.867c0,0-14.07-0.176-0.986,8.766c0,0,9.459,4.437,16.006,21.111c0,0,8.357,25.735,48.467,17.004v26.85c0,3.814-2.324,8.273-9.529,6.936c-57.303-19.058-98.619-73.121-98.619-136.83c0-79.634,64.564-144.2,144.199-144.2c79.633,0,144.199,64.566,144.199,144.2C400.199,323.256,358.939,377.285,301.672,396.377z"/></svg>
-                <figcaption class="social-caption">GitHub</figcaption>
+        <a href="https://github.com/WretchedEraser/" class="github ">
+            <figure class="social">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="social-icon" fill="#00"><path id="github-2-icon" d="M50,50v412h412V50H50z M301.672,396.377c-7.311,1.408-9.621-3.086-9.621-6.924c0-4.74,0-20.277,0-39.57c0-13.448-4.73-22.237-9.895-26.709c32.107-3.567,65.846-15.76,65.846-71.149c0-15.749-5.598-28.61-14.846-38.703c1.49-3.638,6.432-18.307-1.42-38.162c0,0-12.086-3.873-39.617,14.786c-11.512-3.192-23.867-4.799-36.119-4.858c-12.252,0.059-24.586,1.667-36.098,4.858c-27.553-18.659-39.664-14.786-39.664-14.786c-7.816,19.855-2.887,34.524-1.385,38.162c-9.225,10.092-14.857,22.954-14.857,38.703c0,55.26,33.656,67.629,65.693,71.267c-4.131,3.603-7.863,9.962-9.152,19.28c-8.24,3.686-29.104,10.057-41.965-11.982c0,0-7.627-13.846-22.109-14.867c0,0-14.07-0.176-0.986,8.766c0,0,9.459,4.437,16.006,21.111c0,0,8.357,25.735,48.467,17.004v26.85c0,3.814-2.324,8.273-9.529,6.936c-57.303-19.058-98.619-73.121-98.619-136.83c0-79.634,64.564-144.2,144.199-144.2c79.633,0,144.199,64.566,144.199,144.2C400.199,323.256,358.939,377.285,301.672,396.377z"/></svg>
+                <!-- <figcaption class="social-caption">GitHub</figcaption> -->
             </figure>
         </a>
+        </div>
         <br>
         <form id="contactform" method="post">
             <div class="form">
                 <label for="name">name</label>
-                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff"><path id="user-6-icon" d="M377.055,170.75c0,66.275-53.726,120-120,120s-120-53.725-120-120c0-66.273,53.726-120,120-120S377.055,104.477,377.055,170.75z M356.101,296.41c-27.968,22.084-62.633,34.34-99.046,34.34c-36.835,0-71.839-12.543-99.934-35.051C83.067,322.875,50,417.877,50,461.25h412C462,418.25,428.678,323.926,356.101,296.41z"/></svg></span>
+                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00"><path id="user-6-icon" d="M377.055,170.75c0,66.275-53.726,120-120,120s-120-53.725-120-120c0-66.273,53.726-120,120-120S377.055,104.477,377.055,170.75z M356.101,296.41c-27.968,22.084-62.633,34.34-99.046,34.34c-36.835,0-71.839-12.543-99.934-35.051C83.067,322.875,50,417.877,50,461.25h412C462,418.25,428.678,323.926,356.101,296.41z"/></svg></span>
                 <input class="formfield" name="name" id="name" type="text" placeholder="Full Name" required>
             </div>
             <div class="form">
                 <label for="email">email</label>
-                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff"><path id="email-2-icon" d="M49.744,103.407v305.186H50.1h411.156h1V103.407H49.744z M415.533,138.407L255.947,260.465L96.473,138.407H415.533z M84.744,173.506l85.504,65.441L84.744,324.45V173.506z M85.1,373.593l113.186-113.186l57.654,44.127l57.375-43.882l112.941,112.94H85.1z M427.256,325.097l-85.896-85.896l85.896-65.695V325.097z"/></svg></span>
+                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00"><path id="email-2-icon" d="M49.744,103.407v305.186H50.1h411.156h1V103.407H49.744z M415.533,138.407L255.947,260.465L96.473,138.407H415.533z M84.744,173.506l85.504,65.441L84.744,324.45V173.506z M85.1,373.593l113.186-113.186l57.654,44.127l57.375-43.882l112.941,112.94H85.1z M427.256,325.097l-85.896-85.896l85.896-65.695V325.097z"/></svg></span>
                 <input class="formfield" name="email" type="email" placeholder="Email" required>
             </div>
             <div class="form">
                 <label for="phone">phone</label>
-                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" fill="#fff" xml:space="preserve"><path  d="M334.832,50H177.168c-18.227,0-33,14.774-33,33v346c0,18.226,14.773,33,33,33h157.664c18.227,0,33-14.774,33-33V83C367.832,64.774,353.059,50,334.832,50z M238.5,80.222h37c2.209,0,4,1.791,4,4s-1.791,4-4,4h-37c-2.209,0-4-1.791-4-4S236.291,80.222,238.5,80.222z M257.002,443.056c-8.838,0-16-7.163-16-16s7.162-16,16-16c8.834,0,16,7.163,16,16S265.836,443.056,257.002,443.056z M342.75,393.75H169.252v-275.5H342.75V393.75z"/></svg></span>
+                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" fill="#00" xml:space="preserve"><path  d="M334.832,50H177.168c-18.227,0-33,14.774-33,33v346c0,18.226,14.773,33,33,33h157.664c18.227,0,33-14.774,33-33V83C367.832,64.774,353.059,50,334.832,50z M238.5,80.222h37c2.209,0,4,1.791,4,4s-1.791,4-4,4h-37c-2.209,0-4-1.791-4-4S236.291,80.222,238.5,80.222z M257.002,443.056c-8.838,0-16-7.163-16-16s7.162-16,16-16c8.834,0,16,7.163,16,16S265.836,443.056,257.002,443.056z M342.75,393.75H169.252v-275.5H342.75V393.75z"/></svg></span>
                 <input class="formfield" name="phone" type="tel" placeholder="Phone">
             </div>
             <div class="form">
                 <label for="subject">subject</label>
-                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff"><path id="pencil-5-icon" d="M90.695,310.537L50,460.666l152.635-37.87L462,163.434l-112.103-112.1L90.695,310.537z M405.293,163.435l-222.72,222.717L136.407,396.3l-20.288-20.289l10.901-45.092l222.877-222.88L405.293,163.435z"/></svg></span>
+                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00"><path id="pencil-5-icon" d="M90.695,310.537L50,460.666l152.635-37.87L462,163.434l-112.103-112.1L90.695,310.537z M405.293,163.435l-222.72,222.717L136.407,396.3l-20.288-20.289l10.901-45.092l222.877-222.88L405.293,163.435z"/></svg></span>
                 <input class="formfield" name="subject" type="text" placeholder="Subject" required>
             </div>
             <div class="form">
                 <label for="message">message</label>
-                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#fff"><path id="note-5-icon" d="M116.333,422V146.529h279.334c0,0,0,129.795,0,161.545c0,63.121-77.928,37.834-77.928,37.834s23.859,76.092-35,76.092C250.677,422,234.675,422,116.333,422z M435.667,311.527V50H76.333v412h207.016C351.514,462,435.667,372.93,435.667,311.527z"/></svg></span>
+                <span class="form-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3em" height="3em" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" fill="#00"><path id="note-5-icon" d="M116.333,422V146.529h279.334c0,0,0,129.795,0,161.545c0,63.121-77.928,37.834-77.928,37.834s23.859,76.092-35,76.092C250.677,422,234.675,422,116.333,422z M435.667,311.527V50H76.333v412h207.016C351.514,462,435.667,372.93,435.667,311.527z"/></svg></span>
                 <textarea class="formfield" name="comments" rows="8" placeholder="Message" required></textarea>
             </div>
             <div class="form">
@@ -429,7 +417,10 @@
             <p> &copy; 2016 Brendan Hawthorne</p>
         </footer>
     </section>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://use.typekit.net/dev6ndp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="js/index.js"></script>
 </body>
