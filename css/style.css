@@ -169,8 +169,9 @@ section#home { margin-top: 100px;}
 /*///////////home ////////////////////////////*/
 section#home img{
   display: block;
-  margin: 0 auto;
-  width: 100%;
+  margin:  auto;
+  margin-bottom: 100px;
+  height: 500px;
 }
 /*/////////general gallery light box styling////////////////////*/
 #gallery li img{
