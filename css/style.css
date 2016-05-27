@@ -1,4 +1,5 @@
 /*////////////////////////general/////////////////////////////*/
+
 body, ul, li {
     list-style: none;
     margin: 0;
@@ -8,11 +9,14 @@ body, ul, li {
 body {
     background-color: #fff;
 }
-footer{
+footer {
     position: static;
-    bottom: 0;}
+    bottom: 0;
+}
+
 /*general text styling*/
-h1,h2, h3, h4 {
+
+h1, h2, h3, h4 {
     font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
     color: #000;
 }
@@ -24,40 +28,33 @@ h2 {
     font-size: 3.5em;
 }
 h3 {
-    font-size:  2em;
+    font-size: 2em;
     transform: translateX(10%)
 }
 h4 {
-    font-size:  1.75em;
+    font-size: 1.75em;
 }
 p {
     font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
     color: #000;
 }
-label{
+label {
     font-size: 1.5em;
 }
-h3 svg{
+h3 svg {
     height: 20px;
 }
-a{
+a {
     text-decoration: none;
 }
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"],
-input[type="email"],
-input[type="tel"]{
+textarea, input[type="text"], input[type="button"], input[type="submit"], input[type="email"], input[type="tel"] {
     -webkit-appearance: none;
     border-radius: 0;
 }
 section {
-/*    width: 70%;*/
+    /*    width: 70%;*/
     margin: 0 auto;
     height: 1000px;
-    /*padding-left: 5%;*/
-    padding-right: 5%;
     overflow: hidden;
     zoom: 1;
 }
@@ -78,63 +75,59 @@ section p {
     /*transform: translateX(15%);*/
     z-index: 0;
 }
+
 /*////////////////////general header styling//////////////////*/
+
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 @-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 @keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
 }
-
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
 }
-
-.name img{
+.name img {
     height: 50px;
     width: 50px;
     /*     transform: translateX(-200px);*/
     transform: translateY(21px);
 }
-.name  {
+.name {
     margin-left: 10px;
     margin-top: 5px;
     display: inline-block;
 }
-.namelabel{
+.namelabel {
     /*    position: absolute;*/
     display: inline-block;
     font-size: 30px;
     transform: translateY(6px);
-
 }
 header {
     height: 100px;
@@ -144,7 +137,7 @@ header {
     position: fixed;
     top: 0px;
     left: 0px;
-    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     z-index: 1;
 }
 header h1 {
@@ -155,34 +148,63 @@ header nav ul li a {
     border-top: 3px solid #000;
     border-bottom: 3px solid #fff;
     display: block;
-    box-shadow: 0 5px 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3), 0 5px 5px rgba(0, 0, 0, .3), 0 5px 5px rgba(0, 0, 0, .3);
     overflow: hidden;
-
 }
-header nav ul li a svg:hover{
+header nav ul li a svg:hover {
     fill: #ec008c;
 }
-header nav ul li a.active{
+header nav ul li a.active {
     border-bottom: none;
 }
-section#home { margin-top: 100px;}
-/*///////////home ////////////////////////////*/
-section#home img{
-  display: block;
-  margin:  auto;
-  margin-bottom: 100px;
-  height: 400px;
+section#home {
+    margin-top: 100px;
 }
+
+/*///////////home ////////////////////////////*/
+
+section#home img {
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    height: 300px;
+}
+section#home .feat-links {
+    /*display: inline-block;*/
+    width: 10em;
+    font-size: .5em;
+    /*line-height: 3.5em;*/
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    margin: .5em;
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: "raleway", 'Helvetica Neue', 'Arial';
+}
+section#home .link-cont {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+section#home .feat-links:hover {
+    transition: background .5s ease;
+    color: #fff;
+    background: #ec008c;
+}
+
 /*/////////general gallery light box styling////////////////////*/
-#gallery li img{
+
+#gallery li img {
     object-fit: cover;
-    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
     background: #1caab1;
     padding: .51em;
     transition: height .5s ease;
     transition: width .5s ease;
 }
-#gallery li{
+#gallery li {
     display: inline-block;
     margin: 5px;
 }
@@ -201,21 +223,20 @@ section#home img{
     text-align: center;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
 }
 .lightbox figure img {
     max-width: 100%;
     max-height: 70%;
     margin-top: 2%;
 }
-.lightbox figure figcaption{
-
+.lightbox figure figcaption {
     bottom: 0;
     right: 20%;
     left: 20%;
     font-size: 1.25em;
 }
-.lightbox figure{
+.lightbox figure {
     width: 90%;
     height: 90%;
     margin-top: 2%;
@@ -228,29 +249,30 @@ section#home img{
     /** Unhide lightbox **/
     display: block;
 }
+
 /*/////////////////////resume formating/////////////////*/
-section .resume{
+
+section .resume {
     background: green;
 }
-.res-wrapper{
-    float:left;
+.res-wrapper {
+    float: left;
     height: 17em;
 }
-.edu{
-
+.edu {
     height: 15em;
 }
-.work-ul{
+.work-ul {
     margin-top: 25px;
-    font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
+    font-family: 'raleway', 'Helvetica Neue', 'Arial', sans-serif;
     color: #000;
 }
-.eduul{
+.eduul {
     margin-top: -25px;
-    font-family: 'raleway','Helvetica Neue','Arial', sans-serif;
+    font-family: 'raleway', 'Helvetica Neue', 'Arial', sans-serif;
     color: #000;
 }
-.eduheading{
+.eduheading {
     font-family: "futura-pt", 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 1.5em;
 }
@@ -258,13 +280,13 @@ section .resume{
     width: 90%;
     height: auto;
 }
-.res-subwrapper{
+.res-subwrapper {
     height: 8em;
     float: left;
     width: 100%;
     transform: translateX(10%);
 }
-.res-subsubwrapper{
+.res-subsubwrapper {
     margin-top: -50px;
     height: 8em;
     float: left;
@@ -274,47 +296,46 @@ section .resume{
 }
 
 /*/////////////////////contact form style//////////////////////*/
-label{
+
+label {
     visibility: hidden;
 }
-.social-container{
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-
+.social-container {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
 }
-.social{
-  width: 20%;
-  text-align: center;
-  display: inline-block;;
-  margin: 0 auto;
-  margin-top: 70px;
-  /*margin-right: 3%;*/
+.social {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 70px;
+    /*margin-right: 3%;*/
 }
-.social-caption{
-  visibility: hidden;
+.social-caption {
+    visibility: hidden;
     transform: translateY(-15px);
     /*line-height: 50px;*/
     display: inline-flex;
     font-size: 1.5em;
 }
-
-.social-icon{
+.social-icon {
     /*margin-left: 10%;*/
     /*height: 50px;*/
     /*margin-top: -20px;*/
     width: 100%;
 }
-.facebook svg:hover{
+.facebook svg:hover {
     fill: #3B5998;
 }
-.twitter svg:hover{
+.twitter svg:hover {
     fill: #55ACEE;
 }
-.linkedin svg:hover{
+.linkedin svg:hover {
     fill: #0077B5;
 }
-.github svg:hover{
+.github svg:hover {
     fill: #fff;
     stroke: #181717;
     stroke-width: 2%;
@@ -324,66 +345,72 @@ label{
     /*width: 80%;*/
     max-width: 300px
 }
-.form{
-    margin-bottom:10px;
-    width:80%;
+.form {
+    margin-bottom: 10px;
+    width: 80%;
     margin: 0 auto;
 }
-.form-icon{
+.form-icon {
     display: block;
-    color:#000;
-    float:left;
+    color: #000;
+    float: left;
     padding: 1px;
-    margin-bottom:1px;
-
+    margin-bottom: 1px;
 }
 .formfield {
     color: #fff;
     background: #000;
-    border:none;
-    padding:15.5px;
-    width:100%;
-    display:block;
+    border: none;
+    padding: 15.5px;
+    width: 100%;
+    display: block;
     font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
-    font-size:14px;
+    font-size: 14px;
 }
-.btn{
-    display:block;
-    border:none;
-    background:#fff;
+.btn {
+    transition: background .5s ease;
+    display: block;
+    border: none;
+    background: #fff;
     width: 50%;
-    color:#000;
-    padding:4%;
-    cursor:pointer;
-    text-decoration:none;
-    font-size:2em;
-    font-weight:bold;
+    color: #000;
+    padding: 4%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.btn:hover{
-    background:#ec008c;
+.btn:hover {
+    background: #ec008c;
     color: #fff;
-    box-shadow: inset 0 2px 6px rgba(0,0,0,.2);
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, .2);
 }
+
 /*///////////////////////colors////////////////////////////////*/
 
-header nav ul li a.link-1,
-header nav ul li a.link-2,
-header nav ul li a.link-3,
-header nav ul li a.link-4 { background-color: #fff;
-                          }
-header nav ul li svg{
-  fill: #000;
+header nav ul li a.link-1, header nav ul li a.link-2, header nav ul li a.link-3, header nav ul li a.link-4 {
+    background-color: #fff;
 }
-header nav ul li a.active{ background-color: #1caab1;
-                }
-header nav ul li a.active svg{
-  fill: #ec008c;
+header nav ul li svg {
+    transition: fill .5s ease;
+    fill: #000;
 }
+header nav ul li a.active {
+    background-color: #1caab1;
+}
+header nav ul li a.active svg {
+    fill: #ec008c;
+}
+
 /*///////////////////////wide screens/////////////////////////*/
-@media (min-width:1476px){
+
+@media (min-width:1476px) {
+    section#home .feat-links {
+        font-size: 1em;
+    }
     header h1 {
         float: left;
     }
@@ -391,7 +418,7 @@ header nav ul li a.active svg{
         float: right;
         margin-right: 15%;
     }
-    header svg{
+    header svg {
         transform: translateY(10px);
         height: 50px;
         width: 50px;
@@ -404,19 +431,22 @@ header nav ul li a.active svg{
         padding: 13.5px 15px;
         transform: translateY(-84px)
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 63px;
     }
-    section{
+    section {
         max-width: 1000px;
         margin: 0 auto;
     }
-    #gallery li img{
+    #gallery li img {
         width: 10em;
         height: 8em;
     }
 }
-@media (min-width: 900px) and (max-width:1475px){
+@media (min-width: 900px) and (max-width:1475px) {
+    section#home .feat-links {
+        font-size: 1em;
+    }
     header h1 {
         float: left;
     }
@@ -424,7 +454,7 @@ header nav ul li a.active svg{
         float: right;
         margin-right: 10px;
     }
-    header svg{
+    header svg {
         transform: translateY(10px);
         height: 50px;
         width: 50px;
@@ -437,16 +467,18 @@ header nav ul li a.active svg{
         padding: 13.5px 15px;
         transform: translateY(-84px);
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 63px;
     }
-    #gallery li img{
+    #gallery li img {
         width: 10em;
         height: 8em;
     }
 }
+
 /*///////////////////////wide screens/////////////////////////*/
-@media (min-width:701px) and (max-width:899px){
+
+@media (min-width:701px) and (max-width:899px) {
     header h1 {
         float: left;
     }
@@ -454,7 +486,7 @@ header nav ul li a.active svg{
         float: right;
         margin-right: 10px;
     }
-    header nav svg{
+    header nav svg {
         transform: translateY(10px);
         height: 50px;
         width: 50px;
@@ -467,43 +499,45 @@ header nav ul li a.active svg{
         padding: 13.5px 15px;
         transform: translateY(-84px)
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 63px;
     }
-    #gallery li img{
+    #gallery li img {
         width: 8em;
         height: 6em;
     }
 }
+
 /*/////////mobile and small screens to prevent nav warp///////*/
-@media handheld, (min-width:433px) and (max-width:700px){
+
+@media handheld, (min-width:433px) and (max-width:700px) {
     header {
         padding-left: 5%;
         padding-right: 5%;
     }
-    div#myName{
+    div#myName {
         height: 40px;
     }
     header h1 {
         margin: 5px 0px;
     }
-    header nav svg{
+    header nav svg {
         height: 30px;
         width: 30px;
         transform: translateY(-5px);
     }
-    .name img{
+    .name img {
         height: 50px;
         width: 50px;
         transform: translateY(-15px);
     }
-    .name  {
+    .name {
         margin-left: 10px;
         margin-top: 20px;
         display: block;
         text-align: center;
     }
-    .namelabel{
+    .namelabel {
         display: inline-block;
         font-size: 30px;
         transform: translateY(-30px)
@@ -520,34 +554,34 @@ header nav ul li a.active svg{
         height: 20px;
         padding: 10px 10px;
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 24.5px;
     }
-    #gallery li img{
+    #gallery li img {
         width: 6em;
         height: 6em;
     }
 }
-@media handheld, (min-width: 344px) and (max-width: 432px ){
+@media handheld, (min-width: 344px) and (max-width: 432px) {
     header {
         padding-left: 5%;
         padding-right: 5%;
     }
-    div#myName{
+    div#myName {
         height: 40px;
     }
-    .name img{
+    .name img {
         height: 40px;
         width: 40px;
         transform: translateY(-15px);
     }
-    .name  {
+    .name {
         margin-left: 10px;
         margin-top: 20px;
         display: block;
         text-align: center;
     }
-    .namelabel{
+    .namelabel {
         display: inline-block;
         font-size: 20px;
         transform: translateY(-30px)
@@ -555,7 +589,7 @@ header nav ul li a.active svg{
     header h1 {
         margin: 5px 0px;
     }
-    header nav svg{
+    header nav svg {
         height: 30px;
         width: 30px;
         transform: translateY(-5px);
@@ -572,52 +606,53 @@ header nav ul li a.active svg{
         height: 20px;
         padding: 10px 10px;
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 24.5px;
     }
-    #gallery li img{
+    #gallery li img {
         width: 4.65em;
         height: 4.65em;
     }
 }
+
 /*/////////baby phones and potato///////*/
-@media handheld, (max-width: 343px){
-    li{
+
+@media handheld, (max-width: 343px) {
+    li {
         font-size: 10px;
     }
-    h4{
+    h4 {
         font-size: 12px;
     }
-    h3, li.eduheading{
+    h3, li.eduheading {
         font-size: 15px;
     }
     header {
         padding-left: 5%;
         padding-right: 5%;
     }
-    div#myName{
+    div#myName {
         height: 40px;
     }
-    .name img{
+    .name img {
         height: 40px;
         width: 40px;
-        transform: translateY(-15px);
+        transform: translateY(0px);
     }
-    .name  {
-
+    .name {
         margin-left: 10px;
         display: block;
         text-align: center;
     }
-    .namelabel{
+    .namelabel {
         display: inline-block;
         font-size: 20px;
-        transform: translateY(-30px)
+        transform: translateY(-15px)
     }
     header h1 {
         margin: 5px 0px;
     }
-    header nav svg{
+    header nav svg {
         height: 30px;
         width: 30px;
         transform: translateY(-5px);
@@ -632,22 +667,22 @@ header nav ul li a.active svg{
     header nav ul li a {
         height: 20px;
         padding: 10px 10px;
-        transform: translateY(-91px);
+        transform: translateY(-80px);
     }
-    header nav ul li a.active{
+    header nav ul li a.active {
         height: 24.5px;
     }
-    #gallery li img{
+    #gallery li img {
         width: 6em;
         height: 6em;
     }
-    .work-ul{
+    .work-ul {
         margin-top: 10px;
     }
-    .eduul{
+    .eduul {
         margin-top: 0px;
     }
-    .res-subsubwrapper{
+    .res-subsubwrapper {
         margin-top: -10px;
     }
 }
