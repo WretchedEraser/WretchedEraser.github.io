@@ -1,3 +1,7 @@
+#My personal website.
+
+###below are all of the code inspiration I used throughout the project 
+
 Forked from [Clément Guillou](http://codepen.io/cguillou/)'s Pen [Fancy Mobile Flat Navigation](http://codepen.io/cguillou/pen/jmkfK/).
 
 portfolio Icon made by href="http://www.freepik.com, http://www.flaticon.com is licensed under http://creativecommons.org/licenses/by/3.0/ Creative Commons BY 3.0
