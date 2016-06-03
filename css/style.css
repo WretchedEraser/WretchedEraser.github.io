@@ -169,26 +169,29 @@ section#home img {
     margin-bottom: 100px;
     height: 300px;
 }
-section#home .feat-links {
-    /*display: inline-block;*/
+section#portfolio .feat-links {
+    display: flex;
+    justify-content: center;
     width: 10em;
-    font-size: .5em;
+    font-size: 1em;
     /*line-height: 3.5em;*/
-    padding-top: 1.75em;
-    padding-bottom: 1.75em;
+    padding: 1em;
+    padding-bottom: 1em;
     margin: .5em;
     text-align: center;
     background: black;
     color: white;
     font-family: "raleway", 'Helvetica Neue', 'Arial';
+    /*min-width: 200px;*/
 }
-section#home .link-cont {
+section#portfolio .link-cont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     width: 90%;
 }
-section#home .feat-links:hover {
+section#portfolio .feat-links:hover {
     transition: background .5s ease;
     color: #fff;
     background: #ec008c;
@@ -350,10 +353,9 @@ label {
     width: 80%;
     margin: 0 auto;
 }
-.form-icon {
+.form-icon svg {
     display: block;
     color: #000;
-    float: left;
     padding: 1px;
     margin-bottom: 1px;
 }
@@ -362,7 +364,7 @@ label {
     background: #000;
     border: none;
     padding: 15.5px;
-    width: 100%;
+    width: 80%;
     display: block;
     font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 14px;
