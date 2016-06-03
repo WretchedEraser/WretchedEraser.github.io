@@ -304,13 +304,13 @@ label {
     visibility: hidden;
 }
 .social-container {
-    display: block;
-    width: 80%;
+    display: flex;
+    width: 70%;
     margin: 0 auto;
 }
 .social {
-    width: 20%;
-    text-align: center;
+    width: 100%;
+    justify-content: space-around;
     display: inline-block;
     margin: 0 auto;
     margin-top: 70px;
@@ -350,7 +350,7 @@ label {
 }
 .form {
     margin-bottom: 10px;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 .form-icon svg {
@@ -363,11 +363,13 @@ label {
     color: #fff;
     background: #000;
     border: none;
-    padding: 15.5px;
-    width: 80%;
+    padding-top: 15.5px;
+    padding-bottom: 15.5px;
+    margin: 0 auto;
     display: block;
     font-family: "raleway", 'Helvetica Neue', 'Arial', sans-serif;
     font-size: 14px;
+    width: 100%;
 }
 .btn {
     transition: background .5s ease;
