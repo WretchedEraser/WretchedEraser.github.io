@@ -68,7 +68,7 @@ section h2 {
 }
 section p {
     font-weight: 300;
-    font-size: 1em;
+    font-size: .9em;
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
@@ -214,6 +214,8 @@ section#portfolio .feat-links:hover {
 #gallery {
     list-style: none;
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
 }
 .lightbox {
     /** Default lightbox to hidden */
@@ -259,8 +261,10 @@ section .resume {
     background: green;
 }
 .res-wrapper {
-    float: left;
+    /*float: left;*/
     height: 17em;
+    margin: 0 auto;
+    width: 90%;
 }
 .edu {
     height: 15em;
@@ -291,6 +295,7 @@ section .resume {
 }
 .res-subsubwrapper {
     margin-top: -50px;
+    padding-right: 1em;
     height: 8em;
     float: left;
     width: 45%;
