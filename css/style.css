@@ -169,6 +169,9 @@ section#home img {
     margin-bottom: 100px;
     height: 300px;
 }
+section#home h2 {
+    padding-top: 75px;
+}
 section#portfolio .feat-links {
     display: flex;
     justify-content: center;
@@ -397,6 +400,23 @@ label {
     color: #fff;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, .2);
 }
+.webvr {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: #ec008c;
+    color: fff;
+    top: 100px;
+    margin-top: -25px;
+    padding-top: 45px;
+}
+.webvr p {
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    font-size: 1.2em;
+    transform: translateY(-20px);
+}
 
 /*///////////////////////colors////////////////////////////////*/
 
@@ -520,6 +540,9 @@ header nav ul li a.active svg {
 /*/////////mobile and small screens to prevent nav warp///////*/
 
 @media handheld, (min-width:433px) and (max-width:700px) {
+    .webvr p {
+        text-align: center;
+    }
     header {
         padding-left: 5%;
         padding-right: 5%;
@@ -572,6 +595,9 @@ header nav ul li a.active svg {
     }
 }
 @media handheld, (min-width: 344px) and (max-width: 432px) {
+    .webvr p {
+        text-align: center;
+    }
     header {
         padding-left: 5%;
         padding-right: 5%;
@@ -627,6 +653,9 @@ header nav ul li a.active svg {
 /*/////////baby phones and potato///////*/
 
 @media handheld, (max-width: 343px) {
+    .webvr p {
+        text-align: center;
+    }
     li {
         font-size: 10px;
     }
