@@ -298,7 +298,7 @@ section .resume {
 }
 .proj-desc {
     /*transform: translateX(10%);*/
-    /*width: 80%;*/
+    width: 80%;
     /*margin: 0 auto;*/
     /*margin-top: 5px;*/
     max-width: 600px;
